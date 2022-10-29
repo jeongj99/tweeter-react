@@ -1,4 +1,3 @@
-
 import './App.css';
 import Navigation from './components/Navigation';
 import Profile from './components/Profile';
@@ -10,8 +9,10 @@ function App() {
     <div className="App">
       <Navigation></Navigation>
       <Profile></Profile>
-      <TweetForm></TweetForm>
-      <TweetList></TweetList>
+      <main className="container">
+        <TweetForm></TweetForm>
+        <TweetList></TweetList>
+      </main>
     </div>
   );
 }
